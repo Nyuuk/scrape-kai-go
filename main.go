@@ -53,7 +53,7 @@ func run() bool {
         // fmt.Println("d:", d)
         if strings.Contains(strings.ToUpper(d.NameKereta), strings.ToUpper(kereta)) {
             log.Println("Kereta ditemukan:", d.NameKereta, "Status tiket:", d.StatusTiket)
-            hasilKereta = d.NameKereta
+            hasilKereta = d.NameKeretaGet
             statusTiket = d.StatusTiket
             break
         }
@@ -71,6 +71,7 @@ func run() bool {
         // log.Println("Status tiket:", statusTiket, "Kereta:", kereta)
         notifMsg := fmt.Sprintf("Laporan kereta untuk %s: \n\nNama Kereta: *%s* \nStatus Tiket: *%s*\n\nSilahkan melakukan pemesanan segera takutnya terbooking sama yang lain ya *%s*", kereta, hasilKereta, statusTiket, config.Name)
         helpers.SendNotif(config.Number, notifMsg)
+        helpers.SendNotif(config.NumberAdmin, notifMsg)
         return true
     }
     return false
