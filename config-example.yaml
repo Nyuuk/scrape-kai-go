@@ -1,0 +1,9 @@
+name: "kak Adnan Khafabi"
+number: "62811111111@s.whatsapp.net"
+number_admin: "6285555555@s.whatsapp.net"
+target_kereta: "Airlangga"
+url_booking: "https://booking.kai.id/search?origination=%2BkiJ843HDK8x5CQIFzAxcQ%3D%3D&destination=eTzVVt1Dij2khlCW%2Ff9NbA%3D%3D&tanggal=yyU3sXLRgq2%2FkAsmJHQ4mppIGVTyX6qFviVNfTUMJZc%3D&adult=0SoHWQxybcl0Od8oS%2F%2B3uA%3D%3D&infant=1%2BCBzaRdtY8Be5JgBh3LrA%3D%3D&book_type="
+api_whatsapp:
+  x_api_key: "YOUR_API_KEY"
+  x_api_secret: "YOUR_API_SECRET"
+  url: "https://YOUR_API_URL/api/send-message-queue"
