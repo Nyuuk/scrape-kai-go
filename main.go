@@ -42,7 +42,7 @@ func run() bool {
         }
         log.Println(err)
         loopCount++
-        log.Println("Loop count bertambah", loopCount)
+        // log.Println("Loop count bertambah", loopCount)
         errorLoadDataKereta = err
     }
 

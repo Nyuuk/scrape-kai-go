@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: scrape-kai
+  namespace: default
+  labels:
+    app: scrape-kai
+spec:
+  containers:
+  - name: scrape-kai
+    image: reg.icc.private/adnan/scrape-kai:maam
+    imagePullPolicy: Always
