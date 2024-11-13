@@ -53,7 +53,7 @@ func run() bool {
         // fmt.Println("d:", d)
         if strings.Contains(strings.ToUpper(d.NameKereta), strings.ToUpper(kereta)) {
             log.Println("Kereta ditemukan:", d.NameKereta, "Status tiket:", d.StatusTiket)
-            hasilKereta = d.NameKeretaGet
+            hasilKereta = d.NameKereta
             statusTiket = d.StatusTiket
             break
         }
